@@ -1,0 +1,18 @@
+h1 {
+    color: black;
+}
+.jumbotron {
+  background: #000000;
+	color: white;
+	text-align: center;
+}
+.jumbotron p {
+	color: white;
+	font-size: 50px;
+}
+.navbar {
+	margin-bottom: 0;
+}
+.post-form {
+    padding-left: 15px;
+}

@@ -1,0 +1,18 @@
+{% extends 'checkapp/base.html' %}
+
+{% block content %}
+    <table class="table table-inverse">
+      <thead class="thead-inverse">
+        <tr>
+          <th>Computer Name</th>
+        </tr>
+      </thead>
+      <tbody>
+      {% for computer in computers %}
+        <tr>
+          <th><a href="{% url 'computer_detail' pk=computer.pk %}">{{ computer }}</a></th>
+        </tr>
+      {% endfor %}
+      </tbody>
+    </table>
+{% endblock %}

@@ -1,0 +1,10 @@
+{% extends 'checkapp/base.html' %}
+
+{% block content %}
+  <div class="computer">
+    <h1>{{ computer.name }}</h1>
+    <p>{{ computer.checked_in_by }}
+    <br>
+    <br>
+    <a href="{% url 'computer_checkout' pk=computer.pk %}" class="btn btn-success btn-lg"><span class="glyphicon glyphicon-log-out"></span> Check Out</a>
+{% endblock %}
